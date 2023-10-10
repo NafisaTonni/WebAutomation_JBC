@@ -17,10 +17,12 @@ public class LogIn extends BaseDriver
 		Thread.sleep(5000); //1000ms = 1s
 		
 		//username
-		driver.findElement(By.xpath("//input[@id='exampleInputPassword1']")).click();
-		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//input[@id='exampleInputPassword1']")).click(); //text_field_Select
+		Thread.sleep(2000); //wait 2s
 		WebElement username = driver.findElement(By.xpath("//input[@id='exampleInputPassword1']"));
 		username.sendKeys("100011");
+		Thread.sleep(2000);
 		
 		//password
 		driver.findElement(By.xpath("//input[@id='exampleInputPassword2']")).click();
@@ -35,6 +37,8 @@ public class LogIn extends BaseDriver
 		//login button
 		driver.findElement(By.xpath("//button[contains(text(),'LOGIN')]")).click();
 		Thread.sleep(10000);
-		//login.click();
+		//login.click(); 
+		
+		//sasasasasasasa
 	}
 }
